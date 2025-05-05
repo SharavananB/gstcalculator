@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>GST CALCULATOR</h1>
+    </div>
+    <main class="main-content">
+        <div>
+            <label for="">AMOUNT : </label>
+            <input type="number" id="amount" onkeyup="calculator()" placeholder="Enter the Amount">
+        </div>
+        <div>
+            <label for="">PERCENTAGE : </label>
+            <select name="percentage" onchange="calculator()" id="percentage">
+                <option value="5">5%</option>
+                <option value="12">12%</option>
+                <option value="18">18%</option>
+                <option value="23">23%</option>
+            </select>
+        </div>
+        <div>
+            <label for="">TAX : </label>
+            <select name="tax" onchange="calculator()" id="tax">
+                <option value="exclusive">EXCLUSIVE</option>
+                <option value="inclusive">INCLUSIVE</option>
+            </select>
+        </div>
+    </main>
+    <div id="result">
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
